@@ -23,5 +23,5 @@ jobs:
        - uses: actions/checkout@v2
        - name: test app by PyLint
          run: |
-           apt-get install pylint
+           sudo apt-get install pylint
            pylint ../app.py
