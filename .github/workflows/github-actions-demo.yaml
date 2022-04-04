@@ -36,10 +36,10 @@ jobs:
          run: |
            sudo apt-get update
            sudo apt-get install docker
-           sudo groupadd docker
+           sudo groupadd -p docker
            sudo usermod -aG docker $USER
            newgrp docker
-           
+
        - name: Docker build
          run: sudo docker build --tag test-flask-app:1.0 -t test-flask-app:lastest .
        - name: Docker run
