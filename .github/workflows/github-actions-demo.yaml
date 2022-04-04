@@ -19,8 +19,12 @@ jobs:
 
     steps:
        - uses: actions/checkout@v2
+       - name: install pylint
+         run: sudo apt-get install pylint
+       - name: install python3
+         run: sudo apt-get install python3
+       - name: install falsk
+         run: pip install Flask
        - name: test app by PyLint
          run: |
-           sudo apt-get install pylint
-           sudo apt-get install flask
            pylint app.py
