@@ -10,3 +10,5 @@ jobs:
     steps:
        - name: Python version
          run: python -V
+       - name: Docker version
+         run: docker version
