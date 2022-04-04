@@ -12,3 +12,13 @@ jobs:
          run: python -V
        - name: Docker version
          run: docker version
+       - name: flask and click version
+         run: flask --version
+
+jobs:
+  Test-app-with-PyLint:
+
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: test app by PyLint
