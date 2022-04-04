@@ -22,5 +22,5 @@ jobs:
     steps:
        - name: test app by PyLint
          run: |
-         apt-get install pylint
-         pylint ../app.py
+           apt-get install pylint
+           pylint ../app.py
