@@ -9,9 +9,9 @@ jobs:
 
     steps:
        - run: echo "Sukces"
-      # - run: apt-get install python3
-      # - run: apt-get install docker
-      # - run: docker version
-      # - name: Check docker version
-      # - run: python -V
-      # - name: Check python version
+       - run: apt-get install python3
+       - run: apt-get install docker
+       - run: docker version
+       - name: Check docker version
+       - run: python -V
+       - name: Check python version
