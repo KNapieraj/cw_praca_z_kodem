@@ -1,0 +1,13 @@
+name: My Github Workflow
+on: [push]
+jobs:
+  Test-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - echo "CI/CD pipeline"
+      - script: apt-get install python3
+      - script: apt-get install docker
+      - script: docker version
+        displayname: 'Check docker version'
+      - script: python -V
+        displayname: 'Check python version'
