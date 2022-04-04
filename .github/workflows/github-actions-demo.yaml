@@ -3,15 +3,10 @@ name: My Github Workflow
 on: [push]
 
 jobs:
-  Test-github-actions:
+  Python-and-Docker-version:
 
     runs-on: ubuntu-latest
 
     steps:
-       - run: echo "Sukces"
-       - run: apt-get install python3
-       - run: apt-get install docker
-       - run: docker version
-       - name: Check docker version
-       - run: python -V
-       - name: Check python version
+       - name: Python version
+         run: python -V
