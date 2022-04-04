@@ -22,6 +22,5 @@ jobs:
        - name: test app by PyLint
          run: |
            sudo apt-get install pylint
-           pwd
-           ls
+           sudo apt-get install flask
            pylint app.py
