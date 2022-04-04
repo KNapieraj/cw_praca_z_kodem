@@ -28,19 +28,19 @@ jobs:
        - name: test app by PyLint
          run: pylint app.py
 
-  # Build:
+  Build:
 
-  #   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #      - name: install docker
-  #        run: |
-  #          sudo apt-get update
-  #          sudo apt-get install docker
+    steps:
+       - name: install docker
+         run: |
+           sudo apt-get update
+           sudo apt-get install docker
            
-  #          sudo usermod -aG docker $USER
-  #          newgrp docker
-  #      - name: Docker build
-  #        run: /usr/bin/bash docker build --tag test-flask-app:1.0 -t test-flask-app:latest .
-  #      - name: Docker run
-  #        run: docker run -it -p 5000:5000 --name my-app test-flask-app
+           sudo usermod -aG docker $USER
+           newgrp docker
+       - name: Docker build
+         run: sudo docker build --tag test-flask-app:1.0 -t test-flask-app:latest .
+       - name: Docker run
+         run: docker run -it -p 5000:5000 --name my-app test-flask-app
