@@ -21,4 +21,4 @@ jobs:
 
     steps:
        - name: test app by PyLint
-         run: pylint app.py
+         run: find ../.. -name '*.py' -exec pylint {} \;
