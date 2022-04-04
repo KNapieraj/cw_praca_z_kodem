@@ -4,7 +4,7 @@ jobs:
   Test-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - echo "Sukces"
+       - echo "Sukces"
       # - run: apt-get install python3
       # - run: apt-get install docker
       # - run: docker version
