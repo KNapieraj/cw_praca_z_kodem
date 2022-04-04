@@ -1,3 +1,5 @@
+""" Witam w pliku app """
+
 from flask import Flask
 
 APP = Flask(__name__)
