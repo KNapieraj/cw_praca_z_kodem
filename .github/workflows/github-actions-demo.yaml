@@ -21,3 +21,4 @@ jobs:
 
     steps:
        - name: test app by PyLint
+         run: python -V
