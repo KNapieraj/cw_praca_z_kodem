@@ -41,6 +41,6 @@ jobs:
            sudo usermod -aG docker $USER
            newgrp docker
        - name: Docker build
-         run: sudo docker build --tag test-flask-app:1.0 -t test-flask-app:latest Dockerfile
+         run: /usr/bin/bash docker build --tag test-flask-app:1.0 -t test-flask-app:latest .
        - name: Docker run
          run: docker run -it -p 5000:5000 --name my-app test-flask-app
