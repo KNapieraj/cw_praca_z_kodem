@@ -2,7 +2,7 @@ name: My Github Workflow
 on: [push]
 jobs:
   Test-github-actions:
-  - runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: apt-get install python3
       - run: apt-get install docker
