@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - echo "CI/CD pipeline"
-      - script: apt-get install python3
-      - script: apt-get install docker
-      - script: docker version
+      - run: apt-get install python3
+      - run: apt-get install docker
+      - run: docker version
         displayname: 'Check docker version'
-      - script: python -V
+      - run: python -V
         displayname: 'Check python version'
