@@ -12,8 +12,6 @@ jobs:
          run: python -V
        - name: Docker version
          run: docker version
-       - name: flask and click version
-         run: flask --version
 
   Test-app-with-PyLint:
 
@@ -24,4 +22,5 @@ jobs:
        - name: test app by PyLint
          run: |
            sudo apt-get install pylint
-           pylint https://github.com/KNapieraj/cw_praca_z_kodem/blob/develop/app.py
+           pwd
+           ls
