@@ -37,7 +37,7 @@ jobs:
          run: |
            sudo apt-get update
            sudo apt-get install docker
-           
+           python3 -m pip install -r requirements.txt
            sudo usermod -aG docker $USER
            newgrp docker
        - name: Docker build
