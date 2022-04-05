@@ -35,6 +35,7 @@ jobs:
     steps:
        - uses: actions/checkout@v2
 
+       - name: Budowanie i uruchamianie kontenera docker
        - uses: docker-practice/actions-setup-docker@master
        - run: |
            sudo docker build --tag test-flask-app:1.0 -t test-flask-app:latest .
