@@ -62,8 +62,7 @@ jobs:
       #    run: |
       #      sudo apt-get update
       #      sudo apt install docker
-           
-           
+          
       #  - name: Docker build
       #    run: sudo docker build --tag test-flask-app:1.0 -t test-flask-app:latest .
       #  - name: Docker run
